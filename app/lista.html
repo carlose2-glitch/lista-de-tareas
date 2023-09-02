@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de tareas</title>
+    <link rel="icon" href="./check-form_116472.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/5b4e3ea55f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav id="nav">
+
+        <div id="nav_container">
+            <h1>LISTA DE TAREAS</h1>
+
+            <div id="directions">
+                <div id="hamburguer_directions">
+                    <i class="fa-solid fa-bars"></i>
+                    <div id="links_hamburguer-position">
+                        <a class="links_hamburguer" href="../index.html">HOME</a>
+                        <a class="links_hamburguer" href="./lista.html">APP</a>
+                    </div>
+                </div>
+                <a class="links" href="../index.html">HOME</a>
+                <a class="links" href="./lista.html">APP</a>
+            </div>
+
+        </div>
+
+    </nav>
+    <main>
+        <div class="chart">
+            
+            <div class="chart-header">
+                <h2>TASK</h2>
+                <form id="form" action="">
+                    <input type="text" id="input-text" placeholder="ingresa la tarea">
+                    <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                </form>
+
+            </div>
+            
+            <div class="chart-list">
+                <!-- <button class="btn-list btn-trash">
+        <i class="fa-solid fa-trash"></i>
+    </button>
+    
+    <p>${texto}</p>
+    
+    <button class="btn-list btn-check">
+        <i class="fa-solid fa-check verde"></i>
+    </button> -->
+            </div>
+
+            <div class="chart-footer">
+
+                <div class="text">
+                    <p>Total: <p class="total">0</p>
+                </p>
+                </div>
+                
+                <div class="text">
+                    <p>Realizadas: <p class="Realiz">0</p>
+                    </p>
+                </div>
+
+                <div class="text">
+                    <p>Pendientes: <p class="pend">0</p></p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="./list.js"></script>
+</body>
+</html>

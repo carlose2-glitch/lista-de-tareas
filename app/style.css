@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav{
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background-color: #312e81;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav_container{
+    color: #e5e7eb;
+    width: 97%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#directions{
+    display: flex;
+    gap: 2rem;
+
+}
+#hamburguer_directions{
+    display: none;
+    flex-direction: column;
+}
+#links_hamburguer-position{
+    position: absolute;
+    background-color: #312e81;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: -1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+.links_hamburguer{
+    color: #bec5d0;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0.5rem;
+
+}
+
+
+.fa-solid{
+    font-size: 2.5rem;
+}
+.fa-bars{
+    cursor: pointer;
+    display: none;
+    color: #bec5d0;
+}
+.links{
+    font-weight: bold;
+    align-self: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #e5e7eb;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #818cf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chart{
+    width: 24rem;
+    height: 28rem;
+    background-color: #312e81;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.chart-header{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid;
+    border-color: #e5e7eb;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+}
+.chart-header h2{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    color: #e5e7eb;
+}
+.chart-header form{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.chart-header form input{
+    width: 70%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 0 1rem;
+}
+
+.chart-header form button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+.chart-header form button .fa-solid{
+    color: green;
+}
+.chart-header form button .fa-plus:hover{
+    color: rgb(23, 235, 23);
+}
+
+.chart-list{
+    height: 14rem;
+    width: 100%;
+    background-color: #e5e7eb;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.chart-list .tarea{
+    color: white;
+    background-color: #1e1b4b;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+}
+.chart-list::-webkit-scrollbar {
+    width: 0.5rem;
+}
+.chart-list::-webkit-scrollbar-thumb {
+    background: #64748b;
+    border-radius: 1rem;
+}
+.tarea .btn-list{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.fa-trash{
+    color: rgb(148, 32, 32);
+}
+.fa-trash:hover{
+    color: red;
+}
+.chart-list .tarea p{
+    text-align: center;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-self: center;
+    width: 100%;
+}
+/* 
+.fa-check{
+    color: green;
+} */
+.verde{
+    color: green;
+}
+.gris{
+    color: gray;
+}
+.verde:hover{
+    color: rgb(29, 248, 29);
+}
+.fa-trash, .fa-check{
+    padding: 0.5rem;
+}
+
+
+.chart-footer{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.chart-footer .text{
+    display: flex;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e5e7eb;
+}
+
+@media(max-width: 768px){
+    .links{
+        display: none;
+    }
+    #hamburguer_directions{
+        display: flex;
+    }
+}

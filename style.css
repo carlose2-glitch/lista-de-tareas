@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav{
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background-color: #312e81;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav_container{
+    color: #e5e7eb;
+    width: 97%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#directions{
+    display: flex;
+    gap: 2rem;
+
+}
+#hamburguer_directions{
+    display: none;
+    flex-direction: column;
+}
+#links_hamburguer-position{
+    position: absolute;
+    background-color: #312e81;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: -1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+.links_hamburguer{
+    color: #bec5d0;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0.5rem;
+
+}
+
+
+.fa-solid{
+    font-size: 2.5rem;
+}
+.fa-bars{
+    cursor: pointer;
+    display: none;
+    color: #bec5d0;
+}
+.links{
+    font-weight: bold;
+    align-self: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background: #818cf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#major{
+    margin: 0 2rem;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ .text_center{
+    text-align: center;
+    margin: 2rem 0;
+}
+.btn_page-principal{
+    width: 11rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #312e81;
+    color: #e5e7eb;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_page-principal p{
+    font-size: 1.5rem;
+}
+
+
+@media(max-width: 768px){
+    .links{
+        display: none;
+    }
+    #hamburguer_directions{
+        display: flex;
+    }
+}
