@@ -78,6 +78,7 @@ main{
     justify-content: center;
 }
 .chart{
+    margin-top: 5rem;
     width: 24rem;
     height: 28rem;
     background-color: #312e81;
@@ -211,10 +212,19 @@ main{
 }
 
 @media(max-width: 768px){
+
+   
     .links{
         display: none;
     }
     #hamburguer_directions{
         display: flex;
     }
+}
+@media(max-width: 425px){
+
+    .chart{
+        width: 94%;
+}
+
 }
