@@ -21,7 +21,7 @@ let p = 0;
 //funcion para desplegar las opciones del icono
 hamburguer.addEventListener('click', e =>{
 
-    console.log(hamburguerText.style.display === '');
+    //console.log(hamburguerText.style.display === '');
 
     
 
@@ -39,8 +39,8 @@ hamburguer.addEventListener('click', e =>{
 
 btnForm.addEventListener('click', e=>{
     e.preventDefault();
-    
-    if(inputText.value !== ''){
+
+    if(inputText.value.trim()){
         let texto = inputText.value;
 
         const crearContacto = document.createElement('div');
@@ -70,6 +70,7 @@ btnForm.addEventListener('click', e=>{
         localStorage.setItem('tasktotal', t);
         localStorage.setItem('taskpendientes', p);
     }
+       formulario.reset();
 })
 
 
