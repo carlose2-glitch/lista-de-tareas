@@ -141,6 +141,7 @@ main{
     width: 100%;
     background-color: #e5e7eb;
     overflow-y: auto;
+    word-break: break-word;
     overflow-x: auto;
 }
 .chart-list .tarea{
